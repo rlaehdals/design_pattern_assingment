@@ -34,7 +34,4 @@ public abstract class FrameWindow {
     }
 
     public abstract JPanel createPanel(int width, int height);
-
-    public void update(int n){}
-
 }

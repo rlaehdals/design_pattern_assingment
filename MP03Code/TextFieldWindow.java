@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class TextFieldWindow extends FrameWindow {
+public class TextFieldWindow extends FrameWindow implements Observer {
     private JTextField textField;
 
     public TextFieldWindow(String title, int x, int y, int width, int height) {
@@ -13,10 +13,6 @@ public class TextFieldWindow extends FrameWindow {
     public void updateText(String msg) {
         textField.setText(msg);
         textField.validate();
-    }
-    @Override
-    public void update(int n){
-        this.updateText(String.valueOf(n));
     }
 
     public JPanel createPanel(int width, int height) {

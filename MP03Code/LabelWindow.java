@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class LabelWindow extends FrameWindow {
+public class LabelWindow extends FrameWindow implements Observer {
     private JLabel label;
 
     public LabelWindow(String title, int x, int y, int width, int height) {
@@ -13,10 +13,6 @@ public class LabelWindow extends FrameWindow {
     public void updateText(String msg) {
         label.setText(msg);
         label.validate();
-    }
-    @Override
-    public void update(int n){
-        this.updateText(String.valueOf(n));
     }
 
     public JPanel createPanel(int width, int height) {

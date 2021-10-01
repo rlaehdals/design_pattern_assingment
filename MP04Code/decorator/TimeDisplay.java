@@ -29,7 +29,7 @@ public class TimeDisplay extends DisplayDecorator{
         panel.setPreferredSize(new Dimension(getWidth(), getHeight()));
         labelPanel = new LabelPanel();
         panel.add(jPanel);
-        panel.add(labelPanel.createPanel(getWidth(), getHeight()));
+        panel.add(labelPanel.createPanel(getWidth(), 100));
         return panel;
     }
 

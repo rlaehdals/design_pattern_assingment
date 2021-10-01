@@ -23,7 +23,7 @@ public class WeatherDisplay extends DisplayDecorator{
         JPanel panel = new JPanel();
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
         panel.setMinimumSize(new Dimension(getWidth(), getHeight()));
-        panel.setPreferredSize(new Dimension(getWidth(), getHeight()));
+        panel.setPreferredSize(new Dimension(getWidth(), 100));
         labelPanel = new LabelPanel();
         panel.add(jPanel);
         panel.add(labelPanel.createPanel(getWidth(), getHeight()));

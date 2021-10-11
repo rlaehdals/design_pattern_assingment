@@ -27,7 +27,6 @@ public class SpeedometerDisplay extends DisplayDecorator{
         labelPanel = new LabelPanel();
         panel.add(jPanel);
         panel.add(labelPanel.createPanel(getWidth(), 100));
-
         return  panel;
     }
 
@@ -38,7 +37,7 @@ public class SpeedometerDisplay extends DisplayDecorator{
     }
     @Override
     public int getHeight(){
-        return display.getHeight()+100;
+        return display.getHeight()+super.getHeight();
     }
 
 }

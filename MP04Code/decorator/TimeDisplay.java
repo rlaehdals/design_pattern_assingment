@@ -40,7 +40,7 @@ public class TimeDisplay extends DisplayDecorator{
     }
     @Override
     public int getHeight(){
-        return display.getHeight()+100;
+        return display.getHeight()+super.getHeight();
     }
 
 }

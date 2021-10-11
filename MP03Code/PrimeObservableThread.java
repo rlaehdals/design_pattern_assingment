@@ -15,9 +15,6 @@ public class PrimeObservableThread implements Runnable, Observable {
     }
 
     public void addObserver(Observer o) {
-//        if (observers.contains(o)) {
-//            System.out.println("Observers already contained the observer.")
-//        }
         if (!observers.contains(o)) {
             observers.add(o);
         }

@@ -40,10 +40,10 @@ public class MainWindow extends FrameWindow implements ActionListener {
             }
         });
 
-        primeThread = new PrimeObservableThread(); // 객체 생성
+        primeThread = new PrimeObservableThread();
         primeThread.addObserver(textFieldWindow);
         primeThread.addObserver(labelWindow);
-        primeThread.run();  // 소수 생성 시작. 이 함수가 실행된 후에는 stopButton이 눌리기 전까지 무한 반복됨
+        primeThread.run();
     }
 
     public JPanel createPanel(int width, int height) {

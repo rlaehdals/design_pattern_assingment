@@ -23,9 +23,6 @@ public class RectangularShapeFactory implements ShapeFactory{
         else{
             shape=new Parallelogram(type,points);
         }
-
-
-
         return shape;
     }
 }
